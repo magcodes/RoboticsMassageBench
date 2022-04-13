@@ -37,7 +37,7 @@ export default StyleSheet.create({
   createSection: {
     flexDirection: 'row',
   },
-
+  
   linkBtn: {
     paddingLeft: 17,
     color: colors.primary,

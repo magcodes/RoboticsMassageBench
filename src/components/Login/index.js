@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import {useNavigation} from '@react-navigation/native';
-import {Text, Image, TextInput, View, TouchableOpacity} from 'react-native';
+import {Text, Image, View, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
 import Container from '../../components/common/Container';
 import CustomButton from "../../components/common/CustomButton";
 import Input from "../../components/common/Input";
 import styles from "./styles";
 import {REGISTER} from '../../constants/routesNames';
-
+import { AuthContext } from "../../navigation/AuthProvider";
+ 
 const LoginComponent = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const {login} = useContext(AuthContext);
     const {navigate} = useNavigation();
     return (
+        // <KeyboardAvoidingView style={styles.container} behavior="padding">
         <Container>
             <Image
                 height={70}
@@ -23,11 +29,9 @@ const LoginComponent = () => {
                 <Text style={styles.subTitle}>Please login here</Text>
 
                 <View style={styles.form}>
-                    <Input label="Username"
-                        placeholder="Enter Username"
-                        // onChangeText={value => {
-                        // onChange({name: 'userName', value});
-                        // }}
+                    <Input label="Email"
+                        placeholder="Enter Email"
+                        onChangeText={(userEmail) => setEmail(userEmail)}
                         iconPosition="right"
                     />
 
@@ -36,15 +40,12 @@ const LoginComponent = () => {
                         placeholder="Enter Password"
                         icon={<Text>Show</Text>}
                         secureTextEntry={true}
-                        // onChangeText={value => {
-                        // onChange({name: 'password', value});
-                        // }}
+                        onChangeText={(userPassword) => setPassword(userPassword)}
                     />
-               
 
                     <CustomButton
                         // disabled={loading}
-                        // onPress={onSubmit}
+                        onPress={() => login(email, password)}
                         // loading={loading}
                         primary
                         title="Submit"
@@ -63,10 +64,9 @@ const LoginComponent = () => {
                 </View>
 
             </View>
-
             
-
         </Container>
+        // </KeyboardAvoidingView>
     );
 }
 

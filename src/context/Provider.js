@@ -17,9 +17,7 @@ const GlobalProvider = ({children}) => {
     </GlobalContext.Provider>;
 }
 // const GlobalProvider = ({children}) => {
-//   const [authState, authDispatch] = useReducer(auth, authInitialState);
-//   const [massageesState, massageesDispatch] = useReducer(massagees, massageesInitialState);
-
+//   const [authState, authDispatch] = useReducer(auth, authInitial 
 //   return (
 //     <GlobalContext.Provider
 //       value={{authState, massageesState, authDispatch, massageesDispatch}}>

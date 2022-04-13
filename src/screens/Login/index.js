@@ -1,8 +1,8 @@
-import React from "react"
+import React, {useState} from "react"
 import LoginComponent from "../../components/Login";
 
 const Login = () => {
-    const [value, onChangeText] = React.useState('');
+
     return (
         <LoginComponent/>
     );

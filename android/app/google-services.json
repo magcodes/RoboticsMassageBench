@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11970039290",
+    "project_id": "massageapp-7ae7a",
+    "storage_bucket": "massageapp-7ae7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11970039290:android:c6055c40d771353209a843",
+        "android_client_info": {
+          "package_name": "com.massageapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11970039290-2eh5he2hmmjpeca18fklss8l3e6vvpj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuUg2LS2oZmmBH2kcbHoASmpWnHF1LEAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11970039290-2eh5he2hmmjpeca18fklss8l3e6vvpj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

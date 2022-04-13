@@ -13,6 +13,7 @@ export default StyleSheet.create({
 
     inputContainer: {
         paddingVertical: 12,
+
     },
 
     textInput: {
