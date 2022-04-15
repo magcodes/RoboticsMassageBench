@@ -4,6 +4,7 @@ import DrawerNavigator from './DrawerNavigator';
 import AuthNavigator from './AuthNavigator';
 import auth from '@react-native-firebase/auth';
 import { AuthContext } from './AuthProvider';
+import HomeNavigator from './HomeNavigator';
 
 const AppNavContainer = () => { 
     const {user, setUser} = useContext(AuthContext);
@@ -22,7 +23,8 @@ const AppNavContainer = () => {
 
     return (
         <NavigationContainer>
-            {user ? <DrawerNavigator/> : <AuthNavigator/> }           
+            {/* {user ? <DrawerNavigator/> : <AuthNavigator/> }            */}
+            <HomeNavigator />
         </NavigationContainer>
     );
 };

@@ -1,9 +1,5 @@
 import React from 'react';
 import {View, Text, ActivityIndicator, TouchableOpacity} from 'react-native';
-// import { baseProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlers';
-// import { color } from 'react-native-reanimated';
-// import colors from 'react-native/Libraries/NewAppScreen';
-// import {TouchableOpacity} from 'react-native-gesture-handler';
 import colors from '../../../assets/theme/colors';
 import styles from './styles';
 

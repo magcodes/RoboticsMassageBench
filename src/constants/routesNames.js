@@ -1,4 +1,5 @@
-export const MASSAGEES= 'Massagees';
+export const WELCOME = 'Welcome';
+export const DASHBOARD = 'Dashboard';
 export const CREATE_MASSAGEE= 'Create Massagee';
 export const LOGIN = 'Login';
 export const SETTINGS = 'Settings';
