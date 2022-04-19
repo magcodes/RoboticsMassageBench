@@ -1,9 +1,4 @@
 import {StyleSheet} from 'react-native';
-import colors from '../../assets/theme/colors';
-import {Dimensions } from 'react';
-
-// const {width} = Dimensions.get("screen");
-// const cardWidth = width/2 - 20;
 
 
 export default StyleSheet.create({
@@ -18,16 +13,46 @@ export default StyleSheet.create({
     paddingHorizontal: 20
   },
 
-  card: {
-    height:220,
-    width: "100%",
-    marginHorizontal: 10,
-    marginBottom: 20,
-    marginTop: 50,
-    borderRadius: 15,
-    elevation: 13,
-    backgroundColor: colors.white
+  containerBox: {
+    width: '100%',
+    height: '85%',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    paddingBottom: -100,
+    borderColor: 'red',
   },
-  
+
+  boxer: {
+    width: '50%',
+    height: '50%',
+    padding: 5,
+    borderColor: 'red',
+  },
+
+  inner: {
+    flex: 1,
+    backgroundColor: '#eee',
+    borderColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }, 
+
+  subTitle: { 
+    marginTop: 20,
+    fontWeight:'bold', 
+    fontSize: 18,
+    textAlign: 'center',
+    justifyContent: 'center',
+    color: 'blue',
+  },
+
+  image: {
+    width: '100%',
+    height: '100%',
+    opacity: 0.8,
+    borderColor: '#fff',
+    borderWidth: 3
+  }
+ 
    
 });

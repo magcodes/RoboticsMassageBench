@@ -35,7 +35,8 @@ export default StyleSheet.create({
    title: {
         fontSize:32,
         fontWeight:'bold', 
-        textAlign:'center'},
+        textAlign:'center'
+    },
 
   subTitle: { 
     marginTop: 20,

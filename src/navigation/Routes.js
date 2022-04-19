@@ -23,8 +23,8 @@ const AppNavContainer = () => {
 
     return (
         <NavigationContainer>
-            {/* {user ? <DrawerNavigator/> : <AuthNavigator/> }            */}
-            <HomeNavigator />
+            {user ? <DrawerNavigator/> : <AuthNavigator/> }           
+            {/* <HomeNavigator /> */}
         </NavigationContainer>
     );
 };
